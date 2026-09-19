@@ -277,20 +277,19 @@ h2 em {
 }
 .studio-details strong,
 .studio-details a {
-  font-family: var(--serif);
-  font-size: clamp(1.1rem, 1.7vw, 1.4rem);
-  font-weight: 400;
+  grid-column: 2;
+  font-family: var(--sans);
+  font-size: clamp(0.95rem, 1.25vw, 1.1rem);
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
   overflow-wrap: anywhere;
 }
-.studio-details a {
-  transition: color 0.2s;
+.studio-details a[href^="tel:"] {
+  white-space: nowrap;
+  font-variant-numeric: lining-nums tabular-nums;
 }
-.studio-details a:hover {
-  color: #9a6535;
-}
-.services {
-  background: var(--ink);
-}
+
 .section-top {
   display: flex;
   justify-content: space-between;
